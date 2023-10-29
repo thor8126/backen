@@ -1,7 +1,8 @@
 import { app } from "./app.js";
 import { connectDB } from "./config/db.js";
 const port = process.env.PORT || 8000;
-
+import dotenv from "dotenv";
+dotenv.config();
 // here i am starting the server
 connectDB()
   .then(() => {
